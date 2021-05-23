@@ -81,7 +81,7 @@
                 </svg>
                     </center>
                 </div>
-                <div class="form_charrr col-md-6 pb-5">
+                <div class="form_charrr col-md-6">
                     <center>
                     <div class="right-login">
                         <h1 class="fw-bold">Welcome</h1>

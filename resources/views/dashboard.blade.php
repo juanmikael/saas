@@ -81,7 +81,7 @@
                 let chatInput = $('#chatInput');
                 chatInput.keypress(function(e) {
                     let message = $(this).html();
-                    var name = '{{$LoggedUserInfo['username'] }}:';
+                    var name = '{{$LoggedUserInfo['fullname'] }}:';
                     console.log(message);
                     var total = name + ' ' + message;
                     if(e.which === 13 && !e.shiftKey) {
