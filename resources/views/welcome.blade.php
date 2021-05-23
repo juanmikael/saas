@@ -81,7 +81,7 @@
                 <center>
                 <div class="headerzz">
                     <h1>Welcome</h1>
-                    <p>Easy-lend offers a unique opportunity to organizations and individuals to expand their outreach and the visibility of their work. </p>
+                    <p>Workkit makes it easy and fun to stay close to your favorite people while working. </p>
                 </div>
                 <form action="{{route('check')}}" method="post">
                     @if(Session::get('fail'))
