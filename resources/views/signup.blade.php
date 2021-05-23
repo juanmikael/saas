@@ -130,7 +130,7 @@
                         <button class="btn btn-primary mx-auto mb-5" type="submit">Sign In</button>
 
                     </div>
-                    <a href="{{route('home')}}" class="link-secondary">Already Have an Account?</a>
+                    <a href="{{route('/')}}" class="link-secondary">Already Have an Account?</a>
                 </form>
 
                 </center>

@@ -25,7 +25,7 @@ Route::get('/logout',[NewController::class, 'logout'])->name('logout');
 
 Route::group(['middleware'=> ['AuthCheck']], function (){
 
-    Route::get('/home', [NewController::class, 'login'])->name('home');
+    Route::get('/', [NewController::class, 'login'])->name('/');
     Route::get('/signup', [NewController::class, 'signup'])->name('signup');
 
     Route::get('/dashboard', [NewController::class, 'dashboard'])->name('dashboard');

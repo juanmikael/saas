@@ -14,7 +14,7 @@ class NewController extends Controller
     function logout(){
         if (session()->has('LoggedUser')){
             session()->pull('LoggedUser');
-            return redirect('/home');
+            return redirect('/');
         }
     }
     function dashboard(){
@@ -46,7 +46,7 @@ class NewController extends Controller
         }
 
         if ($save){
-            return back()->with('success','data successfully inserted');
+            return redirect('/')->with('success','data successfully inserted');
         }
         else{
             return back()->with('fail','failed to insert data');
