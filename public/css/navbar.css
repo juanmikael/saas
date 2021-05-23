@@ -1,11 +1,13 @@
 .logo span{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
 }
-
+.f-bold{
+    font-weight: bold;
+}
 header{
     background-color: white;
     border-bottom:1px solid #6F6F6F;
@@ -23,6 +25,9 @@ h5{
     background-color: white;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 50px;
+}
+h1,h2,h3,h4,h5,p,span{
+    font-family: 'Roboto', sans-serif !important;
 }
 section{
     width:70%;

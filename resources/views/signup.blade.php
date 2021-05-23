@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Workkit</title>
 
 
         <!-- Bootstrap CSS -->
@@ -13,6 +13,9 @@
 
         <!-- Styles -->
         <link href="/css/main.css" rel="stylesheet">
+  <!--font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 
     </head>
@@ -26,10 +29,10 @@
 <path d="M36.7039 34.3404C36.6007 34.5617 36.5058 34.6973 36.4192 34.7473C36.2286 34.8573 36.0537 34.8543 35.8944 34.7385C34.7748 33.9992 33.5318 32.8463 32.1654 31.2796C32.1081 31.2203 32.0621 31.2007 32.0275 31.2207L31.9316 31.4146C31.9439 32.516 31.8433 33.6017 31.6298 34.6719C31.4336 35.732 31.2299 36.5193 31.0189 37.0338L30.7023 37.8054C30.6191 38.0613 30.5255 38.2193 30.4216 38.2793C30.2311 38.3893 30.0512 38.3777 29.8819 38.2444C29.0809 37.737 27.8242 36.5804 26.1119 34.7746L25.2631 33.8444C24.054 32.5102 23.0112 31.4841 22.1348 30.7661C21.2757 30.0381 20.7146 29.6462 20.4514 29.5903L20.0566 29.5064C19.8707 29.5445 19.7427 29.5029 19.6727 29.3816C19.5327 29.1392 19.7378 28.6743 20.288 27.9872C20.8554 27.2901 21.3383 26.8265 21.7367 26.5965C22.1351 26.3665 22.4899 26.3811 22.8011 26.6402C23.1197 26.8719 23.8425 27.6439 24.9697 28.9562C27.9371 32.416 29.5854 34.0509 29.9145 33.8609C30.0184 33.8009 30.081 33.6493 30.1022 33.4061C30.1308 33.1355 30.1567 32.8204 30.1799 32.4606C30.2204 32.0908 30.2116 31.4954 30.1533 30.6746C30.0951 29.8537 29.926 29.2008 29.646 28.7158C29.596 28.6292 29.3554 28.3524 28.9241 27.8855C28.4829 27.4012 27.996 26.978 27.4635 26.6157C26.9384 26.2261 26.5865 26.0366 26.4079 26.0473C25.9962 26.0541 25.7553 25.9969 25.6853 25.8757C25.5653 25.6678 25.7803 25.2203 26.3305 24.5332C26.8706 23.8287 27.4265 23.3115 27.9981 22.9815C28.2579 22.8315 28.5297 22.8824 28.8137 23.1342C29.5435 23.7982 30.7002 25.0818 32.284 26.9849C34.3116 29.4169 35.5246 30.5179 35.923 30.2879C36.0616 30.2079 36.1594 29.8974 36.2165 29.3563C36.2637 28.798 36.2021 28.0714 36.0319 27.1766C35.8791 26.2718 35.6526 25.5596 35.3526 25.04C35.0426 24.5031 34.7817 24.1111 34.5697 23.8639C34.3651 23.5895 34.0228 23.3367 33.543 23.1057C33.0632 22.8746 32.6438 22.8281 32.2847 22.9662C31.9156 23.0869 31.686 23.0693 31.596 22.9134C31.456 22.6709 31.6311 22.1542 32.1213 21.3631C32.6287 20.5621 33.2635 19.9415 34.0256 19.5015C34.7531 19.0815 35.5368 19.599 36.3768 21.0539C37.4268 22.8726 37.9699 25.0532 38.006 27.5958C38.0421 30.1383 37.6081 32.3866 36.7039 34.3404Z" fill="white"/>
 </svg>
 
-            <span>WORKKIT</span>
+            <span>Workkit</span>
         </div>
         <div class="row">
-            <div class="laptop_gurl col-md-6 p-5">
+            <div class="laptop_gurl col-md-6">
                 <center>
                 <svg class="img-fluid mb-5" width="572" height="512" viewBox="0 0 572 512" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
@@ -81,7 +84,7 @@
             <div class="form_charrr col-md-6 mt-5 p-5">
                 <center>
                 <div class="headerzz">
-                    <h1>Be one of us!</h1>
+                    <h1 class="fw-bold">Be one of us!</h1>
                     <p>Workkit makes it easy and fun to stay close to your favorite people while working.</p>
                 </div>
                 <form action="{{route('save')}}" method="post">
@@ -97,6 +100,16 @@
                         @endif
                     @csrf
                     <div class="forma px-4 pt-3">
+                        <div class="input-group mt-3">
+
+                            <span class="icon input-group-text" id="basic-addon1"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="5" r="5" fill="#4E4E4E"/>
+                            <path d="M16 19C11.5 19 12.4183 19 8 19C3.58172 19 6.5 19 0 19C0 14.5817 3.58172 11 8 11C12.4183 11 16 14.5817 16 19Z" fill="#4E4E4E"/>
+                        </svg></span>
+                            <input type="fullname" class="User_form" name="fullname" id="exampleInputEmail1" placeholder="Full Name">
+                            <span class="text-danger">@error('fullname'){{$message}} @enderror</span>
+
+                        </div>
                     <div class="input-group mt-3">
 
                             <span class="icon input-group-text" id="basic-addon1"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,6 +120,7 @@
                         <span class="text-danger">@error('username'){{$message}} @enderror</span>
 
                     </div>
+
                     <div class="pw input-group ">
                         <span class="icon1 input-group-text" id="basic-addon1"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13 6.5C13 9.10848 12.3627 10.3876 11.5891 11.0556C10.7863 11.7488 9.59772 12 8 12C6.40228 12 5.21371 11.7488 4.41089 11.0556C3.63726 10.3876 3 9.10848 3 6.5C3 3.38556 5.31243 1 8 1C10.6876 1 13 3.38556 13 6.5Z" stroke="#4E4E4E" stroke-width="2"/>
