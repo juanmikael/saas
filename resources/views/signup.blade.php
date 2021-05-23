@@ -96,6 +96,16 @@
                         @endif
                     @csrf
                     <div class="forma px-4 pt-3">
+                        <div class="input-group mt-3">
+
+                            <span class="icon input-group-text" id="basic-addon1"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="5" r="5" fill="#4E4E4E"/>
+                            <path d="M16 19C11.5 19 12.4183 19 8 19C3.58172 19 6.5 19 0 19C0 14.5817 3.58172 11 8 11C12.4183 11 16 14.5817 16 19Z" fill="#4E4E4E"/>
+                        </svg></span>
+                            <input type="fullname" class="User_form" name="fullname" id="exampleInputEmail1" placeholder="Full Name">
+                            <span class="text-danger">@error('fullname'){{$message}} @enderror</span>
+
+                        </div>
                     <div class="input-group mt-3">
 
                             <span class="icon input-group-text" id="basic-addon1"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,6 +116,7 @@
                         <span class="text-danger">@error('username'){{$message}} @enderror</span>
 
                     </div>
+
                     <div class="pw input-group ">
                         <span class="icon1 input-group-text" id="basic-addon1"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13 6.5C13 9.10848 12.3627 10.3876 11.5891 11.0556C10.7863 11.7488 9.59772 12 8 12C6.40228 12 5.21371 11.7488 4.41089 11.0556C3.63726 10.3876 3 9.10848 3 6.5C3 3.38556 5.31243 1 8 1C10.6876 1 13 3.38556 13 6.5Z" stroke="#4E4E4E" stroke-width="2"/>

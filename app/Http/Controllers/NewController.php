@@ -28,16 +28,19 @@ class NewController extends Controller
         $request->validate([
             'username'=>'required',
             'password'=>'required',
+            'fullname' => 'required',
             'confirmpw'=>'required'
         ]);
+        $userFullname = Admin::where('fullname', '=', $request->fullname)->first();
         $userInfo = Admin::where('username', '=', $request->username)->first();
         if ($userInfo){
             return back()->with('fail', 'Username already been taken');
         }
-        if (!$userInfo) {
+        if (!$userInfo || !$userFullname) {
             $admin = new Admin;
             $admin->username = $request->username;
             $admin->password = $request->password;
+            $admin->fullname = $request->fullname;
             $admin->confirmpw = $request->confirmpw;
             if ($request->password != $request->confirmpw) {
                 return back()->with('fail', 'Please confirm password');

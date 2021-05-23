@@ -66,7 +66,7 @@
     <nav class="navbar justify-content-end">
         <div class="btn-group">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {{$LoggedUserInfo['username'] }}
+                {{$LoggedUserInfo['fullname'] }}
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <button class="dropdown-item" type="button"><a href="{{ route('logout') }}">Log Out</a></button>
