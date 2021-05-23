@@ -1,0 +1,138 @@
+.logo span{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+header{
+    background-color: white;
+    border-bottom:1px solid #6F6F6F;
+
+}
+body{
+    background-color: #E5E5E5;
+
+}
+
+h1, h3{
+    font-family: 'Poiret One', cursive;
+}
+section{
+    width:70%;
+    margin-left:200px;
+}
+#navbar{
+    overflow:hidden;
+
+
+
+    background-color:#FFFFFF;
+    top:0;
+    left:0;
+    z-index:499;
+}
+#primary_nav{
+    top:0px;
+    position: fixed;
+    display: block;
+    left: -115px;
+    width: 170px;
+    height: 100%;
+    background:white;
+    z-index:500;
+    border-right:1px solid #6F6F6F;
+}
+#primary_nav ul{
+    display: block;
+    margin-top:80px;
+    padding-left: 5px;
+    list-style: none;
+}
+#primary_nav ul li a{
+    display: block;
+    padding:0 0 25px 20px;
+    color: #6C63FF;
+    font-weight:bold;
+    font-size:15px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+#primary_nav ul li a:hover, #primary_nav ul li a:active{
+    color: #6C63FF;
+    padding-left:17px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.active{
+    color: #6C63FF;
+}
+
+#mobile_nav{
+    font-size:36px;
+    position: relative;
+    display: inline-block;
+    top:10px;
+    left:127px;
+    color: #6C63FF;
+    text-decoration: none;
+    z-index:1000;
+}
+#mobile_nav:hover{
+    color: #434244;
+}
+
+
+/*main*/
+
+.ff{
+    max-width: 80vw;
+    margin:auto;
+    margin-top: 10vh;
+}
+.btnserts{
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 567px) {
+    /* For mobile phones: */
+    .cool{
+        padding-top: 5px;
+    }
+
+}
+.thov:hover{
+
+    background-color: #6C63FF;
+}
+.dcount{
+    text-align: end;
+}
+
+/* Admin validation*/
+.btnadd{
+    border-radius: 100px;
+}
+.add{
+    border-radius: 100px;
+    border:1px solid #6C63FF;
+}
+
+/*Table*/
+
+.tbl{
+    height:700px;
+    overflow-y: auto;
+}
+.containerrr{
+    min-height: 100vh;
+}

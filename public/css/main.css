@@ -1,0 +1,109 @@
+.logo span{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+.login_container{
+
+    background-color: #ffffff;
+
+}
+body{
+    background-color: #E5E5E5;
+
+}
+.form_charrr input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    width: 70%;
+    height: 50px;
+    left: 890px;
+    top: 478px;
+    color: #4E4E4E;
+}
+.usericon i{
+    position: absolute;
+    left: 64%;
+
+
+}
+.forma{
+    margin-left: 18%;
+}
+
+.User_form{
+    background: #F2F2F2;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.form_charrr button{
+
+    background: #6C63FF;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    width: 10rem;
+
+    color: #FFFFFF;
+}
+.icon{
+    background-color: #F2F2F2;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+.icon1{
+
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+.headerzz h1{
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 59px;
+    text-align: center;
+    align-items: center;
+
+    color: #000000;
+}
+.pwo{
+    margin-bottom: 1000px;
+}
+.headerzz p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    width: 20vw;
+
+    color: #000000;
+}
+.containerrr{
+    min-height: 100vh;
+}
+.signup{
+
+}
+
+
