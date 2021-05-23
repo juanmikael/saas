@@ -13,7 +13,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
     <link href="/css/navbar.css" rel="stylesheet">
 </head>
@@ -81,6 +82,52 @@
     <!-- MAIN CONTENT DIV-->
     <div class="ff">
 
+        <div class="container">
+            <div class="row chat-row">
+                <div class="chat-content">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="chat-section">
+                    <div class="chat-box">
+                        <div class="chat-input bg-primary" id="chatInput" contenteditable="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
+
+
+        <script>
+            $(function() {
+                let ip_address = '127.0.0.1';
+                let socket_port = '3000';
+                let socket = io(ip_address + ':' + socket_port);
+
+                let chatInput = $('#chatInput');
+                chatInput.keypress(function(e) {
+                    let message = $(this).html();
+                    var name = '{{$LoggedUserInfo['username'] }}:';
+                    console.log(message);
+                    var total = name + ' ' + message;
+                    if(e.which === 13 && !e.shiftKey) {
+                        socket.emit('sendChatToServer', total);
+                        chatInput.html('');
+                        return false;
+                    }
+                });
+
+                socket.on('sendChatToClient', (message) => {
+                    $('.chat-content ul').append(`<h1> ${message}</h1>`);
+                });
+            });
+        </script>
     </div>
 
 </main>

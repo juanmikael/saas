@@ -13,12 +13,10 @@ header{
 }
 body{
     background-color: #E5E5E5;
-
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h3{
-    font-family: 'Poiret One', cursive;
-}
+
 section{
     width:70%;
     margin-left:200px;
