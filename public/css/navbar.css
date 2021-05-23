@@ -15,17 +15,21 @@ body{
     background-color: #E5E5E5;
     font-family: 'Roboto', sans-serif;
 }
-
-
+.container-customer{
+    padding: 5%;
+    max-width: 100vw;
+}
+h5{
+    background-color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 50px;
+}
 section{
     width:70%;
     margin-left:200px;
 }
 #navbar{
     overflow:hidden;
-
-
-
     background-color:#FFFFFF;
     top:0;
     left:0;
