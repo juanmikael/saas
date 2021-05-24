@@ -1,8 +1,8 @@
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 .logo span{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-style: italic;
     font-weight: bold;
     font-size: 15px;
@@ -20,16 +20,22 @@ html{
 }
 body{
     background-color: #E5E5E5;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+}
+.f-12{
+    font-size: 12px;
 }
 .f-bold{
     font-weight: bold !important;
 }
 h1,h2,h3,h4,h5,p,span{
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto' !important;
 }
 .form_charrr{
-    padding: 9vh 4vw 2vh 4vw;
+    padding: 11vh 4vw 2vh 4vw;
+}
+.signup-right{
+    padding: 8vh 4vw 2vh 4vw;
 }
 .input-group{
     border-top-style: hidden !important;
@@ -51,13 +57,13 @@ h1,h2,h3,h4,h5,p,span{
 .usericon i{
     position: absolute;
     left: 64%;
-
-
 }
 .login-form{
    padding: 0 9vw 0 9vw;
 }
-
+.signup-forms{
+    padding: 2vh 8vw 0 8vw;
+}
 .User_form{
     background: #F2F2F2;
     border-radius: 5px 5px 0px 0px;
@@ -65,7 +71,19 @@ h1,h2,h3,h4,h5,p,span{
 }
 
 .form_charrr button{
+    background: #6C63FF;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    width: 10rem;
 
+    color: #FFFFFF;
+}
+.signup-right button{
     background: #6C63FF;
     border-radius: 50px;
     font-family: Roboto;
@@ -117,11 +135,37 @@ h1,h2,h3,h4,h5,p,span{
     text-align: center;
     color: #000000;
 }
+.right-signup p{
+    padding: 0 7vw 0vh 7vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
 .containerrr{
     padding: 5vh 3vw 3vh 3vw;
 }
-.signup{
-
+.p-b{
+   padding-bottom: 4vh; 
 }
 
-
+/**SVG**/
+#girl-hair {
+    animation: hr 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes hr {
+    from {
+        transform:rotateZ(0deg);
+    }
+    to {
+        transform:rotateZ(8deg);
+    }
+}
+.fw-bold{
+    font-weight: bolder !important;
+}
