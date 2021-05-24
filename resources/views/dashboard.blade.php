@@ -17,6 +17,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
     <link href="/css/navbar.css" rel="stylesheet">
+    <script>
+        const ROOM_ID = "<%= roomId %>"
+    </script>
+    <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/js/script.js" defer></script>
+    <style>
+        #video-grid {
+
+            grid-template-columns: repeat(auto-fill, 30vw);
+            grid-auto-rows: 30vh;
+            align-self: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        video {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            align-self: center;
+            align-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
 
@@ -50,6 +76,7 @@
 </nav>
 
     <div class="container-customer" style="position:relative">
+       <center><div id="video-grid"></div><br></center>
         <div class="chat-row p-0">
             <div class="chat-content p-0">
                 <ul>

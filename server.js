@@ -26,6 +26,17 @@ io.on('connection', (socket) => {
         console.log('Disconnect');
     });
 });
+io.on('connection', socket => {
+    socket.on('join-room', (roomId, userId) => {
+        socket.join(roomId)
+        socket.to(roomId).broadcast.emit('user-connected', userId)
+
+        socket.on('disconnect', () => {
+            socket.to(roomId).broadcast.emit('user-disconnected', userId)
+        })
+    })
+})
+
 
 server.listen(3000, () => {
     console.log('Server is running');
