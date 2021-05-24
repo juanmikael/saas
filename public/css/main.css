@@ -158,6 +158,16 @@ h1,h2,h3,h4,h5,p,span{
     transform-origin: center;
     transform-box: fill-box;
 }
+#plant {
+    animation: hr 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#plant2 {
+    animation: hr 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
 @keyframes hr {
     from {
         transform:rotateZ(0deg);
