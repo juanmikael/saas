@@ -83,17 +83,18 @@
                 let chatInput = $('#chatInput');
                 chatInput.keypress(function(e) {
                     let message = $(this).html();
-                    var name = '{{$LoggedUserInfo['fullname'] }}:';
+                    var name = '{{$LoggedUserInfo['fullname'] }}';
                     console.log(message);
-                    var total = name + ' ' + message;
+                    var total = name + ' : ' + message;
+                    var total2 = message + ' : ' + name ;
                     if(e.which === 13 && !e.shiftKey) {
                         socket.emit('sendChatToServer', total);
-                        multiply(total);
+                        display(total2);
                         chatInput.html('');
                         return false;
                     }
                 });
-                const multiply = function(message) {
+                const display = function(message) {
                     $('.chat-content ul').append(`<h5 style="color: white; background: #6C63FF; text-align: end"> ${message}</h5>`);
                 }
 
