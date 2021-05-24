@@ -33,7 +33,7 @@
     </button>
     <div class="collapse navbar-collapse pl-5" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      
+
       </ul>
       <span class="navbar-text pl-5">
         <ul class="navbar-nav pl-5">
@@ -60,7 +60,7 @@
             <div class="chat-section" style="position:fixed;bottom:0;left:5%;width:90%">
                 <div class="chat-box">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Message</span>
+                        <span class="input-group-text" id="basic-addon1">Say something</span>
                         <div class="chat-input form-control" id="chatInput" contenteditable=""></div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
         </div>
     </div>
 
-        
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
@@ -88,16 +88,21 @@
                     var total = name + ' ' + message;
                     if(e.which === 13 && !e.shiftKey) {
                         socket.emit('sendChatToServer', total);
+                        multiply(total);
                         chatInput.html('');
                         return false;
                     }
                 });
+                const multiply = function(message) {
+                    $('.chat-content ul').append(`<h5 style="color: white; background: #6C63FF; text-align: end"> ${message}</h5>`);
+                }
 
                 socket.on('sendChatToClient', (message) => {
                     $('.chat-content ul').append(`<h5> ${message}</h5>`);
                 });
             });
         </script>
+
 
 
 <script src="/js/tdash.js"></script>
